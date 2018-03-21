@@ -17,7 +17,7 @@ public class CityFileHandler extends FileHandler<City>{
 	@Inject
 	private CountryRepository countryRep;
 	@Override
-	public void save(City t) throws InvalidLineException {
+	public void save(City t) {
 		cityRep.save(t);	
 	}
 	@Override

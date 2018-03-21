@@ -6,7 +6,7 @@ import org.junit.runner.notification.Failure;
 
 import br.com.cinq.spring.data.sample.application.Application;
 
-public class TestRunner {
+public class AllTestRunner {
 	public static void main(String[] args) {
 		Application.main(new String[0]);
 		boolean fail=false;

@@ -3957,3 +3957,9 @@ org.xml.sax.SAXParseException: The element type "thead" must be terminated by th
 2018-03-20 21:16:07,551 [main] INFO  b.c.c.s.d.s.application.Application - Starting Application on localhost.localdomain with PID 16063 (/home/isantos/dev/workspace-spring/spring-jpa-jersey/target/classes started by isantos in /home/isantos/dev/workspace-spring/spring-jpa-jersey)
 2018-03-20 21:16:07,555 [main] INFO  b.c.c.s.d.s.application.Application - The following profiles are active: @spring.profiles.active@
 2018-03-20 21:16:14,605 [main] INFO  b.c.c.s.d.s.application.Application - Started Application in 7.696 seconds (JVM running for 8.448)
+2018-03-20 21:36:30,956 [main] INFO  b.c.c.s.d.s.application.Application - Starting Application on localhost.localdomain with PID 18813 (/home/isantos/dev/workspace-spring/spring-jpa-jersey/target/classes started by isantos in /home/isantos/dev/workspace-spring/spring-jpa-jersey)
+2018-03-20 21:36:30,958 [main] INFO  b.c.c.s.d.s.application.Application - The following profiles are active: @spring.profiles.active@
+2018-03-20 21:36:35,811 [main] INFO  b.c.c.s.d.s.application.Application - Started Application in 5.224 seconds (JVM running for 8.164)
+2018-03-20 22:35:26,088 [main] INFO  b.c.c.s.d.s.application.Application - Starting Application on localhost.localdomain with PID 6591 (/home/isantos/dev/workspace-spring/spring-jpa-jersey/target/classes started by isantos in /home/isantos/dev/workspace-spring/spring-jpa-jersey)
+2018-03-20 22:35:26,107 [main] INFO  b.c.c.s.d.s.application.Application - The following profiles are active: @spring.profiles.active@
+2018-03-20 22:35:32,744 [main] INFO  b.c.c.s.d.s.application.Application - Started Application in 7.176 seconds (JVM running for 7.937)

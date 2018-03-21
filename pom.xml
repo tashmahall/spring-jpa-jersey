@@ -4,7 +4,6 @@
 	<groupId>br.com.cinq.sample</groupId>
 	<artifactId>spring-jpa-jersey</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>Spring JPA Jersey</name>
 
 

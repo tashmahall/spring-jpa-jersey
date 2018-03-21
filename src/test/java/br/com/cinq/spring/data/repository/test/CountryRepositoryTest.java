@@ -52,5 +52,28 @@ public class CountryRepositoryTest {
         Assert.assertEquals(1, countries.size());
 
     }
+    @Test
+    public void testFindOneCountryByName() {
 
+        Assert.assertNotNull(dao);
+
+        Country countries = dao.findByName("Brazil");
+
+        Assert.assertEquals("Brazil", countries.getName());
+
+    }
+    @Test
+    public void testSaveOneCountry() {
+
+        Assert.assertNotNull(dao);
+        
+        Country countries = new Country();
+        countries.setName("Russia");
+        dao.save(countries);
+        
+        Country cTemp = dao.findByName("Russia");
+
+        Assert.assertEquals("Russia", cTemp.getName());
+
+    }
 }

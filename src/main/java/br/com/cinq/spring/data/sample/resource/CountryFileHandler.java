@@ -13,7 +13,7 @@ public class CountryFileHandler extends FileHandler<Country>{
 	@Inject
 	private CountryRepository countryRep;
 	@Override
-	public void save(Country t) throws InvalidLineException {
+	public void save(Country t){
 		countryRep.save(t);	
 	}
 	@Override

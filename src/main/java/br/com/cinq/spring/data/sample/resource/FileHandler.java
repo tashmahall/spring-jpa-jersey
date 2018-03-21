@@ -25,7 +25,7 @@ public abstract class FileHandler<T>  {
 			throw new InvalidLineException(errorMesageList);
 		}
 	}
-	public abstract void save(T t) throws InvalidLineException ;
+	public abstract void save(T t);
 	protected abstract T createEntity(String[] string) ;
 	protected abstract void valid(String[] stringCity) throws InvalidLineException;
 }
