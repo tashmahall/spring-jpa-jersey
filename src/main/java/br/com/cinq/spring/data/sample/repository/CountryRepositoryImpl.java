@@ -47,4 +47,9 @@ public class CountryRepositoryImpl implements CountryRepository {
 		return typedQuery.getResultList();
 	}
 
+	@Override
+	public void save(Country country) {
+		em.persist(country);
+	}
+
 }

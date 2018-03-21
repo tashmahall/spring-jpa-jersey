@@ -16,9 +16,10 @@ public class TestRunner {
 			System.out.println("The test "+failure.getTestHeader()+" has faield");
 			fail=true;
 		}
-		if(!fail)
+		if(!fail) {
 			System.out.println("THE SYSTEM HAS PASSED THROUGH ALL THE TESTS");
-		else	
+			System.exit(1);
+		}else	
 			System.out.println("THE SYSTEM HAS FAILS");
 		System.exit(0);
 	}

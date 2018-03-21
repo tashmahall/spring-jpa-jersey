@@ -4,7 +4,7 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 import br.com.cinq.spring.data.sample.resource.CityResource;
 
@@ -12,8 +12,8 @@ import br.com.cinq.spring.data.sample.resource.CityResource;
  * Register Jersey modules
  * @author Adriano Kretschmer
  */
-//@Configuration
-@Component
+@Configuration
+//@Component
 @ApplicationPath("/")
 public class Config extends ResourceConfig {
 

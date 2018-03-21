@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Home</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <p>This is the homepage!</p>
-    </body>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Upload Cities and Countries</h1>
+
+<form method="POST" action="uploadCity" enctype="multipart/form-data">
+	<h2>Cities Upload</h2>
+	Field Char Separator:
+	<input name="splitChar" type="text" maxlength="1" size="5"/>
+	Choose the CSV file to Upload:
+    <input type="file" name="file" size="10"/>
+    <input type="submit" value="Submit" />
+</form>
+<form method="POST" action="uploadCountry" enctype="multipart/form-data">
+	<h2>Countries Upload</h2>
+	Field Char Separator:
+	<input name="splitCharCountry" type="text" maxlength="1" size="5" />
+	Choose the CSV file to Upload:
+    <input type="file" name="fileCountry" size="10"/>
+    <input type="submit" value="Submit" />
+</form>
+</body>
 </html>

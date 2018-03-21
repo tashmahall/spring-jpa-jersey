@@ -1,5 +1,6 @@
 package br.com.cinq.spring.data.sample.resource;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -28,15 +29,13 @@ public class CityResource {
 	@Path("/cities")
 	@Produces({MediaType.APPLICATION_JSON})
 	public List<City> getAllCitiesByCountryName(@QueryParam("country") String countryName) {
-		Country cTemp = countryRep.findByName(countryName);
-		if(cTemp==null) {
-			return null;
-			
+		List<Country> lCTemp = countryRep.findLikeName(countryName);
+		List<City> lCities = new ArrayList<>();
+		for(Country cTemp : lCTemp) {
+			if(cTemp!=null) {
+				lCities.addAll(cityRep.findByCountry(cTemp));
+			}
 		}
-		List<City> lCities = cityRep.findByCountry(cTemp);
 		return lCities;
-
-		
 	}
-
 }
